@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="81ac6945-f948-4575-864c-c34014dc1334" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/test_project/neural_network/vision_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_project" beforeDir="false" afterPath="$PROJECT_DIR$/test_project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_project/main/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_project/main/templates/registration/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_project/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_project/main/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_project/test_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_project/test_project/settings.py" afterDir="false" />
@@ -23,7 +25,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/test_project" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -45,6 +47,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\misha\PycharmProjects\Django project" />
       <recent name="C:\Users\misha\PycharmProjects\Django project\test_project" />
       <recent name="C:\Users\misha\PycharmProjects\Django project\test_project\main\templates" />
       <recent name="C:\Users\misha\PycharmProjects\Django project\test_project\main\static\main" />
