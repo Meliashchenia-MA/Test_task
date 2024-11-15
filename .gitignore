@@ -2,3 +2,5 @@
 .env
 .venv
 test_project/logs/
+test_project/main/images/
+test_project/main/migrations/
