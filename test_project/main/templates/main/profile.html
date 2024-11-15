@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{% static 'main/css/profile.css' %}">
+</head>
+<body>
+  <div class="container">
+    <div class="login form">
+      <header>User account</header>
+      <form action="#" method="post">
+        {% csrf_token %}
+        {% if form.username.errors %}
+          <div class="error">{{ form.username.errors }}</div>
+        {% endif %}
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Add your username" value="{{ user.username }}">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Add your email" value="{{ user.email }}">
+
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio" class="bio-input" placeholder="Short bio about yourself">{{ user.bio }}</textarea>
+
+        <input type="submit" class="button" value="Save changes">
+        <div class="button container" style="height: 80px; display: flex; justify-content: space-between; align-items: center; margin-top: 300px; background: #fff; border: none;">
+          <div class="logout">
+            <a href="{% url 'logout' %}" class="logout_button" style="color: #FF0000; ">Logout</a>
+          </div>
+          {% include 'main/home_button.html' %}
+        </div>>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Processed Image</title>
+    <link rel="stylesheet" href="{% static 'main/css/display_image.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Processed Image</h1>
+        <div class="processed-image">
+            <img src="{{ processed_image.url }}" alt="Processed Image">
+        </div>
+        <br>
+        <a href="/upload">Back to Upload</a>
+        <br>
+        <br>
+        <h2>Download Image</h2>
+        <ul>
+            <li><a href="{% url 'download_image' id=id format='jpeg' %}">Download as JPEG</a></li>
+            <li><a href="{% url 'download_image' id=id format='png' %}">Download as PNG</a></li>
+            <li><a href="{% url 'download_image' id=id format='pdf' %}">Download as PDF</a></li>
+        </ul>
+        {% include 'main/home_button.html' %}
+    </div>
+</body>
+</html>

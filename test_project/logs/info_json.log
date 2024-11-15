@@ -1,0 +1,30 @@
+{"level": "INFO", "time": "2024-11-12 14:52:30", "module": "views", "pid": 20484, "thread": 20552, "text": "User shmel logged in successfully.", "filename": "views.py", "line": 35, "func": "login_view"}
+{"level": "INFO", "time": "2024-11-12 15:05:26", "module": "views", "pid": 7816, "thread": 16868, "text": "New user shmel registered and logged in.", "filename": "views.py", "line": 59, "func": "reg_view"}
+{"level": "INFO", "time": "2024-11-12 15:07:02", "module": "views", "pid": 9380, "thread": 16656, "text": "New user test12345 registered and logged in.", "filename": "views.py", "line": 59, "func": "reg_view"}
+{"level": "INFO", "time": "2024-11-12 15:07:13", "module": "views", "pid": 9380, "thread": 9688, "text": "User logged out", "filename": "views.py", "line": 104, "func": "logout_view"}
+{"level": "INFO", "time": "2024-11-12 15:07:22", "module": "views", "pid": 9380, "thread": 18348, "text": "User test12345 logged in successfully.", "filename": "views.py", "line": 35, "func": "login_view"}
+{"level": "INFO", "time": "2024-11-12 18:41:17", "module": "views", "pid": 18572, "thread": 21956, "text": "User shmel123logged in", "filename": "views.py", "line": 31, "func": "login_view"}
+{"level": "INFO", "time": "2024-11-12 18:41:27", "module": "views", "pid": 18572, "thread": 11948, "text": "User info was changed", "filename": "views.py", "line": 87, "func": "profile_view"}
+{"level": "INFO", "time": "2024-11-12 18:49:22", "module": "views", "pid": 19000, "thread": 2460, "text": "User shmel123 registered and logged in", "filename": "views.py", "line": 53, "func": "reg_view"}
+{"level": "INFO", "time": "2024-11-12 19:13:01", "module": "views", "pid": 12200, "thread": 19404, "text": "User shmel registered and logged in", "filename": "views.py", "line": 53, "func": "reg_view"}
+{"level": "INFO", "time": "2024-11-12 19:27:12", "module": "views", "pid": 14732, "thread": 16188, "text": "User shmellogged in", "filename": "views.py", "line": 34, "func": "login_view"}
+{"level": "INFO", "time": "2024-11-13 11:07:40", "module": "views", "pid": 17492, "thread": 11940, "text": "User shmel registered and logged in", "filename": "views.py", "line": 56, "func": "reg_view"}
+{"level": "INFO", "time": "2024-11-14 16:06:28", "module": "views", "pid": 8676, "thread": 1696, "text": "User shmellogged in", "filename": "views.py", "line": 42, "func": "login_view"}
+{"level": "INFO", "time": "2024-11-14 16:07:33", "module": "views", "pid": 8676, "thread": 14912, "text": "User logged out", "filename": "views.py", "line": 107, "func": "logout_view"}
+{"level": "ERROR", "time": "2024-11-14 16:07:41", "module": "views", "pid": 8676, "thread": 9032, "text": "Error while logging", "filename": "views.py", "line": 45, "func": "login_view"}
+{"level": "ERROR", "time": "2024-11-14 16:08:08", "module": "views", "pid": 8676, "thread": 3108, "text": "User shmel already exists", "filename": "views.py", "line": 69, "func": "reg_view"}
+{"level": "INFO", "time": "2024-11-14 16:09:48", "module": "views", "pid": 8676, "thread": 13076, "text": "User shmellogged in", "filename": "views.py", "line": 42, "func": "login_view"}
+{"level": "INFO", "time": "2024-11-14 16:10:00", "module": "views", "pid": 8676, "thread": 13076, "text": "User info was changed", "filename": "views.py", "line": 98, "func": "profile_view"}
+{"level": "INFO", "time": "2024-11-14 16:10:02", "module": "views", "pid": 8676, "thread": 13076, "text": "User logged out", "filename": "views.py", "line": 107, "func": "logout_view"}
+{"level": "INFO", "time": "2024-11-14 16:11:08", "module": "views", "pid": 16196, "thread": 5072, "text": "User test123 registered and logged in", "filename": "views.py", "line": 64, "func": "reg_view"}
+{"level": "INFO", "time": "2024-11-14 16:11:25", "module": "views", "pid": 16196, "thread": 5072, "text": "User logged out", "filename": "views.py", "line": 107, "func": "logout_view"}
+{"level": "INFO", "time": "2024-11-14 16:14:37", "module": "views", "pid": 14744, "thread": 13920, "text": "User shmellogged in", "filename": "views.py", "line": 42, "func": "login_view"}
+{"level": "INFO", "time": "2024-11-14 16:14:39", "module": "views", "pid": 14744, "thread": 13920, "text": "User logged out", "filename": "views.py", "line": 107, "func": "logout_view"}
+{"level": "INFO", "time": "2024-11-14 16:14:46", "module": "views", "pid": 14744, "thread": 13920, "text": "User shmellogged in", "filename": "views.py", "line": 42, "func": "login_view"}
+{"level": "INFO", "time": "2024-11-14 16:14:48", "module": "views", "pid": 14744, "thread": 13920, "text": "User logged out", "filename": "views.py", "line": 107, "func": "logout_view"}
+{"level": "ERROR", "time": "2024-11-14 16:14:54", "module": "views", "pid": 14744, "thread": 13920, "text": "Error while logging", "filename": "views.py", "line": 45, "func": "login_view"}
+{"level": "INFO", "time": "2024-11-14 16:15:06", "module": "views", "pid": 14744, "thread": 13920, "text": "User shmellogged in", "filename": "views.py", "line": 42, "func": "login_view"}
+{"level": "INFO", "time": "2024-11-14 16:17:40", "module": "views", "pid": 14744, "thread": 10508, "text": "User logged out", "filename": "views.py", "line": 107, "func": "logout_view"}
+{"level": "INFO", "time": "2024-11-14 16:26:25", "module": "views", "pid": 13988, "thread": 16988, "text": "User shmellogged in", "filename": "views.py", "line": 42, "func": "login_view"}
+{"level": "INFO", "time": "2024-11-14 16:26:28", "module": "views", "pid": 13988, "thread": 16988, "text": "User logged out", "filename": "views.py", "line": 107, "func": "logout_view"}
+{"level": "INFO", "time": "2024-11-14 16:26:56", "module": "views", "pid": 12316, "thread": 17224, "text": "User shmellogged in", "filename": "views.py", "line": 42, "func": "login_view"}

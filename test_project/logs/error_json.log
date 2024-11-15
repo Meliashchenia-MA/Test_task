@@ -1,0 +1,1467 @@
+{"level": "ERROR", "time": "2024-11-11 14:30:32", "module": "log", "pid": 13428, "thread": 13380, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 111, in upload_file
+    form.save()
+AttributeError: 'UploadFileForm' object has no attribute 'save'
+{"level": "ERROR", "time": "2024-11-11 14:41:32", "module": "log", "pid": 13456, "thread": 4908, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: main_uploadmodel
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 111, in upload_file
+    form.save()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\forms\models.py", line 552, in save
+    self.instance.save()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: main_uploadmodel
+{"level": "ERROR", "time": "2024-11-11 14:44:40", "module": "log", "pid": 3344, "thread": 20220, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 112, in upload_file
+    return redirect('success')
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'success' not found. 'success' is not a valid view function or pattern name.
+{"level": "ERROR", "time": "2024-11-11 20:13:02", "module": "log", "pid": 13120, "thread": 13212, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: table main_uploadmodel has no column named username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 111, in upload_file
+    form.save()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\forms\models.py", line 552, in save
+    self.instance.save()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: table main_uploadmodel has no column named username
+{"level": "ERROR", "time": "2024-11-11 20:17:15", "module": "log", "pid": 15260, "thread": 15324, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: table main_uploadmodel has no column named username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 113, in upload_file
+    upload_instance.save()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: table main_uploadmodel has no column named username
+{"level": "ERROR", "time": "2024-11-11 20:18:12", "module": "log", "pid": 16108, "thread": 14972, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: table main_uploadmodel has no column named username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    upload_instance.save()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: table main_uploadmodel has no column named username
+{"level": "ERROR", "time": "2024-11-11 20:28:34", "module": "log", "pid": 14968, "thread": 7416, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: table main_uploadmodel has no column named username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    upload_instance.save()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: table main_uploadmodel has no column named username
+{"level": "ERROR", "time": "2024-11-11 20:29:58", "module": "log", "pid": 5552, "thread": 14572, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: table main_uploadmodel has no column named username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    upload_instance.save()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: table main_uploadmodel has no column named username
+{"level": "ERROR", "time": "2024-11-11 20:30:53", "module": "log", "pid": 13548, "thread": 1948, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: table main_uploadmodel has no column named username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 115, in upload_file
+    upload_instance.save()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: table main_uploadmodel has no column named username
+{"level": "ERROR", "time": "2024-11-11 23:22:45", "module": "log", "pid": 2156, "thread": 17628, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'file_field_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 119, in upload_file
+    uploaded_file = request.FILES[
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'file_field_name'
+{"level": "ERROR", "time": "2024-11-12 00:19:35", "module": "log", "pid": 11080, "thread": 6588, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 120, in upload_file
+    processed_image = process_image(image_path, MODEL_PATH)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 106, in process_image
+    image = Image.open(image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\PIL\Image.py", line 3536, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file 'C:\\Users\\misha\\PycharmProjects\\Django project\\test_project\\main\\model\\simple_cnn.pth'
+{"level": "ERROR", "time": "2024-11-12 00:20:26", "module": "log", "pid": 16888, "thread": 11108, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 120, in upload_file
+    processed_image = process_image(MODEL_PATH, image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 106, in process_image
+    image = Image.open(image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\PIL\Image.py", line 3469, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\misha\\PycharmProjects\\Django project\\test_project\\main\\uploads\\original\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-12 00:22:50", "module": "log", "pid": 1464, "thread": 2812, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 120, in upload_file
+    processed_image = process_image(MODEL_PATH, image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 106, in process_image
+    image = Image.open(image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\PIL\Image.py", line 3469, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\uploads\\original\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-12 00:25:59", "module": "log", "pid": 19264, "thread": 2112, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 122, in upload_file
+    with open(image_path, 'wb+') as destination:
+FileNotFoundError: [Errno 2] No such file or directory: '/uploads/original/99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-12 15:05:26", "module": "log", "pid": 7816, "thread": 16868, "text": "Internal Server Error: /profile", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 74, in profile_view
+    user = Users.objects.get(username=request.user.username)
+NameError: name 'Users' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 76, in profile_view
+    except Users.DoesNotExist:
+NameError: name 'Users' is not defined
+{"level": "ERROR", "time": "2024-11-12 18:43:02", "module": "log", "pid": 18812, "thread": 20204, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: main_uploadmodel.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 104, in upload_file
+    form.save()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\forms\models.py", line 552, in save
+    self.instance.save()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: main_uploadmodel.user_id
+{"level": "ERROR", "time": "2024-11-12 18:46:19", "module": "log", "pid": 14976, "thread": 7944, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: main_uploadmodel.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 104, in upload_file
+    form.save()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\forms\models.py", line 552, in save
+    self.instance.save()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: main_uploadmodel.user_id
+{"level": "ERROR", "time": "2024-11-12 18:49:35", "module": "log", "pid": 19000, "thread": 12792, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: main_uploadmodel.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 104, in upload_file
+    form.save()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\forms\models.py", line 552, in save
+    self.instance.save()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: main_uploadmodel.user_id
+{"level": "ERROR", "time": "2024-11-12 19:13:17", "module": "log", "pid": 12200, "thread": 19404, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: main_uploadmodel.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 104, in upload_file
+    form.save()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\forms\models.py", line 552, in save
+    self.instance.save()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: main_uploadmodel.user_id
+{"level": "ERROR", "time": "2024-11-12 19:14:56", "module": "log", "pid": 18568, "thread": 2668, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 107, in upload_file
+    return redirect('success')
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'success' not found. 'success' is not a valid view function or pattern name.
+{"level": "ERROR", "time": "2024-11-12 19:23:02", "module": "log", "pid": 22004, "thread": 10100, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    processed_image = process_image(MODEL_PATH, image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 113, in process_image
+    model.load_state_dict(torch.load(model_path, weights_only=True))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1319, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 659, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 640, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'model\\simple_cnn.pth'
+{"level": "ERROR", "time": "2024-11-12 19:24:50", "module": "log", "pid": 10308, "thread": 6536, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    processed_image = process_image(MODEL_PATH, image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 106, in process_image
+    image = Image.open(image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\PIL\Image.py", line 3469, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\misha\\PycharmProjects\\Django project\\test_project\\main\\uploads\\original\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-12 19:26:59", "module": "log", "pid": 14732, "thread": 4100, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    processed_image = process_image(MODEL_PATH, image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 113, in process_image
+    model.load_state_dict(torch.load(model_path, weights_only=True))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1351, in load
+    return _load(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1848, in _load
+    result = unpickler.load()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\_weights_only_unpickler.py", line 385, in load
+    self.append(self.persistent_load(pid))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1812, in persistent_load
+    typed_storage = load_tensor(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1784, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 601, in default_restore_location
+    result = fn(storage, location)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 467, in _mps_deserialize
+    return obj.mps()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\storage.py", line 260, in mps
+    return torch.UntypedStorage(self.size(), device="mps").copy_(self, False)
+RuntimeError: torch.UntypedStorage(): Storage device not recognized: mps
+{"level": "ERROR", "time": "2024-11-12 19:27:23", "module": "log", "pid": 14732, "thread": 2600, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    processed_image = process_image(MODEL_PATH, image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 113, in process_image
+    model.load_state_dict(torch.load(model_path, weights_only=True))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1351, in load
+    return _load(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1848, in _load
+    result = unpickler.load()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\_weights_only_unpickler.py", line 385, in load
+    self.append(self.persistent_load(pid))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1812, in persistent_load
+    typed_storage = load_tensor(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1784, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 601, in default_restore_location
+    result = fn(storage, location)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 467, in _mps_deserialize
+    return obj.mps()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\storage.py", line 260, in mps
+    return torch.UntypedStorage(self.size(), device="mps").copy_(self, False)
+RuntimeError: torch.UntypedStorage(): Storage device not recognized: mps
+{"level": "ERROR", "time": "2024-11-12 19:31:51", "module": "log", "pid": 18508, "thread": 21416, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    processed_image = process_image(MODEL_PATH, image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 108, in process_image
+    model.load_state_dict(torch.load(model_path, weights_only=True))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1351, in load
+    return _load(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1848, in _load
+    result = unpickler.load()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\_weights_only_unpickler.py", line 385, in load
+    self.append(self.persistent_load(pid))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1812, in persistent_load
+    typed_storage = load_tensor(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1784, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 601, in default_restore_location
+    result = fn(storage, location)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 467, in _mps_deserialize
+    return obj.mps()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\storage.py", line 260, in mps
+    return torch.UntypedStorage(self.size(), device="mps").copy_(self, False)
+RuntimeError: torch.UntypedStorage(): Storage device not recognized: mps
+{"level": "ERROR", "time": "2024-11-12 19:32:03", "module": "log", "pid": 18508, "thread": 2336, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    processed_image = process_image(MODEL_PATH, image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 108, in process_image
+    model.load_state_dict(torch.load(model_path, weights_only=True))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1351, in load
+    return _load(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1848, in _load
+    result = unpickler.load()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\_weights_only_unpickler.py", line 385, in load
+    self.append(self.persistent_load(pid))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1812, in persistent_load
+    typed_storage = load_tensor(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1784, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 601, in default_restore_location
+    result = fn(storage, location)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 467, in _mps_deserialize
+    return obj.mps()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\storage.py", line 260, in mps
+    return torch.UntypedStorage(self.size(), device="mps").copy_(self, False)
+RuntimeError: torch.UntypedStorage(): Storage device not recognized: mps
+{"level": "ERROR", "time": "2024-11-12 19:33:27", "module": "log", "pid": 15612, "thread": 1236, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    processed_image = process_image(MODEL_PATH, image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 108, in process_image
+    model.load_state_dict(torch.load(model_path, weights_only=True))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1351, in load
+    return _load(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1848, in _load
+    result = unpickler.load()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\_weights_only_unpickler.py", line 385, in load
+    self.append(self.persistent_load(pid))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1812, in persistent_load
+    typed_storage = load_tensor(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1784, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 601, in default_restore_location
+    result = fn(storage, location)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 467, in _mps_deserialize
+    return obj.mps()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\storage.py", line 260, in mps
+    return torch.UntypedStorage(self.size(), device="mps").copy_(self, False)
+RuntimeError: torch.UntypedStorage(): Storage device not recognized: mps
+{"level": "ERROR", "time": "2024-11-12 20:27:18", "module": "log", "pid": 20192, "thread": 8444, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    processed_image = process_image(MODEL_PATH, image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 110, in process_image
+    state_dict = torch.load(model_path, weights_only=True)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1351, in load
+    return _load(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1848, in _load
+    result = unpickler.load()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\_weights_only_unpickler.py", line 385, in load
+    self.append(self.persistent_load(pid))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1812, in persistent_load
+    typed_storage = load_tensor(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 1784, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 601, in default_restore_location
+    result = fn(storage, location)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\serialization.py", line 467, in _mps_deserialize
+    return obj.mps()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\torch\storage.py", line 260, in mps
+    return torch.UntypedStorage(self.size(), device="mps").copy_(self, False)
+RuntimeError: torch.UntypedStorage(): Storage device not recognized: mps
+{"level": "ERROR", "time": "2024-11-12 20:31:48", "module": "log", "pid": 21376, "thread": 6440, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    processed_image = process_image(MODEL_PATH, image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 103, in process_image
+    image = Image.open(image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\PIL\Image.py", line 3469, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\misha\\PycharmProjects\\Django project\\test_project\\uploads\\original\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-12 20:32:07", "module": "log", "pid": 21376, "thread": 12556, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    processed_image = process_image(MODEL_PATH, image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 103, in process_image
+    image = Image.open(image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\PIL\Image.py", line 3469, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\misha\\PycharmProjects\\Django project\\test_project\\uploads\\original\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-12 21:37:16", "module": "log", "pid": 18064, "thread": 12836, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 115, in upload_file
+    with open(image_path, 'wb+') as destination:
+FileNotFoundError: [Errno 2] No such file or directory: 'images\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-12 21:38:40", "module": "log", "pid": 10124, "thread": 2544, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 115, in upload_file
+    with open(image_path, 'wb+') as destination:
+FileNotFoundError: [Errno 2] No such file or directory: 'images\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-12 21:51:48", "module": "log", "pid": 21864, "thread": 16408, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 115, in upload_file
+    with open(image_path, 'wb+') as destination:
+FileNotFoundError: [Errno 2] No such file or directory: 'media\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-12 21:53:06", "module": "log", "pid": 22036, "thread": 21940, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 115, in upload_file
+    with open(image_path, 'wb+') as destination:
+FileNotFoundError: [Errno 2] No such file or directory: 'media\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-12 21:54:43", "module": "log", "pid": 21632, "thread": 2660, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 115, in upload_file
+    with open(image_path, 'wb+') as destination:
+FileNotFoundError: [Errno 2] No such file or directory: 'media\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-12 21:57:24", "module": "log", "pid": 15528, "thread": 3904, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    with open(image_path, 'wb+') as destination:
+FileNotFoundError: [Errno 2] No such file or directory: 'media\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-12 21:57:49", "module": "log", "pid": 11984, "thread": 13132, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    with open(image_path, 'wb+') as destination:
+FileNotFoundError: [Errno 2] No such file or directory: 'media\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-12 21:58:53", "module": "log", "pid": 19328, "thread": 17676, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    with open(image_path, 'wb+') as destination:
+FileNotFoundError: [Errno 2] No such file or directory: 'media\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-12 21:59:41", "module": "log", "pid": 19328, "thread": 17716, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    with open(image_path, 'wb+') as destination:
+FileNotFoundError: [Errno 2] No such file or directory: 'media\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-12 22:00:31", "module": "log", "pid": 2856, "thread": 18616, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    with open(image_path, 'wb+') as destination:
+FileNotFoundError: [Errno 2] No such file or directory: 'media\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-12 22:02:15", "module": "log", "pid": 19968, "thread": 15392, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    with open(image_path, 'wb+') as destination:
+FileNotFoundError: [Errno 2] No such file or directory: 'media\\original\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-12 22:05:52", "module": "log", "pid": 9504, "thread": 20952, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 114, in upload_file
+    process_image(MODEL_PATH, image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 102, in process_image
+    image = Image.open(image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\PIL\Image.py", line 3469, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\misha\\PycharmProjects\\Django project\\test_project\\media\\images\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-13 11:13:20", "module": "log", "pid": 5980, "thread": 5840, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 119, in upload_file
+    process_image(MODEL_PATH, image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 100, in process_image
+    image = Image.open(image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\PIL\Image.py", line 3469, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\misha\\PycharmProjects\\Django project\\test_project\\media\\images\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.jpg'
+{"level": "ERROR", "time": "2024-11-13 13:24:10", "module": "log", "pid": 13904, "thread": 10588, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 128, in upload_file
+    return render(request, 'main/display_image.html', {'new_image_path': new_image_path})
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'new_image_path' not found. 'new_image_path' is not a valid view function or pattern name.
+{"level": "ERROR", "time": "2024-11-13 13:30:00", "module": "log", "pid": 7332, "thread": 8676, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 128, in upload_file
+    return render(request, 'main/display_image.html', {'new_image_path': new_image_path})
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'new_image_path' not found. 'new_image_path' is not a valid view function or pattern name.
+{"level": "ERROR", "time": "2024-11-13 13:37:12", "module": "log", "pid": 3344, "thread": 15236, "text": "Internal Server Error: /images/pic1.jpg/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 138, in image_view
+    return render(request, 'display_image.html', {'image_path': image_path})
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: display_image.html
+{"level": "ERROR", "time": "2024-11-13 13:39:28", "module": "log", "pid": 15968, "thread": 8296, "text": "Internal Server Error: /images/99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru__labeled.png/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 136, in image_view
+    return render(request, 'display_image.html', {'image_path': image_path})
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: display_image.html
+{"level": "ERROR", "time": "2024-11-13 13:41:42", "module": "log", "pid": 16032, "thread": 7948, "text": "Internal Server Error: /media/images/99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru__labeled.png/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 136, in image_view
+    return render(request, 'display_image.html', {'image_path': image_path})
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: display_image.html
+{"level": "ERROR", "time": "2024-11-13 13:43:29", "module": "log", "pid": 10744, "thread": 17032, "text": "Internal Server Error: /media/images/99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru__labeled.png", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 136, in image_view
+    return render(request, 'display_image.html', {'image_path': image_path})
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: display_image.html
+{"level": "ERROR", "time": "2024-11-13 13:55:45", "module": "log", "pid": 10856, "thread": 14372, "text": "Internal Server Error: /media/images/99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru__labeled.png", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 136, in image_view
+    return render(request, 'display_image.html', {'image_path': image_path})
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: display_image.html
+{"level": "ERROR", "time": "2024-11-13 14:29:13", "module": "log", "pid": 6600, "thread": 12068, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 122, in upload_file
+    with open(image_path, 'wb+') as destination:
+FileNotFoundError: [Errno 2] No such file or directory: 'images\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.png'
+{"level": "ERROR", "time": "2024-11-13 14:30:13", "module": "log", "pid": 16032, "thread": 11296, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 122, in upload_file
+    with open(image_path, 'wb+') as destination:
+FileNotFoundError: [Errno 2] No such file or directory: 'images\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.png'
+{"level": "ERROR", "time": "2024-11-13 14:51:48", "module": "log", "pid": 21512, "thread": 17528, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 122, in upload_file
+    with open(image_path, 'wb+') as destination:
+FileNotFoundError: [Errno 2] No such file or directory: 'images\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.png'
+{"level": "ERROR", "time": "2024-11-13 14:52:01", "module": "log", "pid": 21512, "thread": 21636, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 122, in upload_file
+    with open(image_path, 'wb+') as destination:
+FileNotFoundError: [Errno 2] No such file or directory: 'images\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.png'
+{"level": "ERROR", "time": "2024-11-13 14:52:41", "module": "log", "pid": 21092, "thread": 11976, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 126, in upload_file
+    process_image(MODEL_PATH, image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 100, in process_image
+    image = Image.open(image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\PIL\Image.py", line 3469, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\misha\\PycharmProjects\\Django project\\test_project\\images\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.png'
+{"level": "ERROR", "time": "2024-11-13 20:01:27", "module": "log", "pid": 13024, "thread": 612, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 128, in upload_file
+    process_image(MODEL_PATH, image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 100, in process_image
+    image = Image.open(image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\PIL\Image.py", line 3469, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\misha\\PycharmProjects\\Django project\\test_project\\images\\99px_ru_wallpaper_352214_asa_mitaka__asa_mitaka__eru_.png'
+{"level": "ERROR", "time": "2024-11-13 20:07:23", "module": "log", "pid": 17000, "thread": 19448, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 127, in upload_file
+    process_image(MODEL_PATH, image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 114, in process_image
+    write_label_on_image(image, label, new_image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 87, in write_label_on_image
+    font = ImageFont.load_default("arial.ttf", font_size)
+TypeError: load_default() takes from 0 to 1 positional arguments but 2 were given
+{"level": "ERROR", "time": "2024-11-13 21:58:32", "module": "log", "pid": 4876, "thread": 21632, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 133, in upload_file
+    return render(request, 'main/display_image.html', {'form': form, 'processed_image': upload_instance.processed_image})
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'download_image' with arguments '('', 'jpeg')' not found. 1 pattern(s) tried: ['download/(?P<image_id>[0-9]+)/(?P<format>[^/]+)/\\Z']
+{"level": "ERROR", "time": "2024-11-13 21:59:54", "module": "log", "pid": 4876, "thread": 11556, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 133, in upload_file
+    return render(request, 'main/display_image.html', {'form': form, 'processed_image': upload_instance.processed_image})
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'download_image' with arguments '('', 'jpeg')' not found. 1 pattern(s) tried: ['download/(?P<image_id>[0-9]+)/(?P<format>[^/]+)/\\Z']
+{"level": "ERROR", "time": "2024-11-13 22:15:59", "module": "log", "pid": 1824, "thread": 15088, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'processed_image.url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 133, in upload_file
+    return render(request, 'main/display_image.html', {'form': form, 'processed_image': upload_instance.processed_image})
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 19: 'processed_image.url'. Did you forget to register or load this tag?
+{"level": "ERROR", "time": "2024-11-13 22:19:15", "module": "log", "pid": 9164, "thread": 19700, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 134, in upload_file
+    return render(request, 'main/display_image.html', {'form': form, 'processed_image': upload_instance.processed_image})
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'download_image' with keyword arguments '{'id': '', 'format': 'jpeg'}' not found. 1 pattern(s) tried: ['download/(?P<id>[0-9]+)/(?P<format>[^/]+)/\\Z']
+{"level": "ERROR", "time": "2024-11-13 22:29:34", "module": "log", "pid": 13280, "thread": 17740, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 134, in upload_file
+    return redirect(reverse('display_image', args=[upload_instance.id]))
+NameError: name 'reverse' is not defined
+{"level": "ERROR", "time": "2024-11-13 22:30:48", "module": "log", "pid": 7340, "thread": 17512, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 135, in upload_file
+    return redirect(reverse('display_image', args=[upload_instance.id]))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'display_image' not found. 'display_image' is not a valid view function or pattern name.
+{"level": "ERROR", "time": "2024-11-13 22:32:32", "module": "log", "pid": 22476, "thread": 13028, "text": "Internal Server Error: /display/101/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 162, in display_image
+    return render(request, 'display_image.html', {'processed_image': processed_image})
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: display_image.html
+{"level": "ERROR", "time": "2024-11-13 22:39:02", "module": "log", "pid": 7380, "thread": 12696, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 135, in upload_file
+    return redirect(reverse('display_image', args=[upload_instance]))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'display_image' with arguments '(<UploadModel: UploadModel object (103)>,)' not found. 1 pattern(s) tried: ['display/(?P<id>[0-9]+)/\\Z']
+{"level": "ERROR", "time": "2024-11-13 22:47:16", "module": "log", "pid": 13124, "thread": 7872, "text": "Internal Server Error: /display/106/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 163, in display_image
+    return render(request, 'main/display_image.html', {'id': id, 'processed_image': processed_image})
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'download_image' with keyword arguments '{'id': 'id', 'format': 'jpeg'}' not found. 1 pattern(s) tried: ['download/(?P<id>[0-9]+)/(?P<format>[^/]+)/\\Z']
+{"level": "ERROR", "time": "2024-11-13 22:50:16", "module": "log", "pid": 13124, "thread": 16004, "text": "Internal Server Error: /download/107/jpeg/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 143, in download_image
+    filename = obj.model_attribute_name.path
+AttributeError: 'UploadModel' object has no attribute 'model_attribute_name'
+{"level": "ERROR", "time": "2024-11-13 22:52:40", "module": "log", "pid": 17260, "thread": 15456, "text": "Internal Server Error: /download/109/jpeg/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 151, in download_image
+    with Image.open(filename) as img:
+AttributeError: type object 'Image' has no attribute 'open'
+{"level": "ERROR", "time": "2024-11-14 16:07:41", "module": "views", "pid": 8676, "thread": 9032, "text": "Error while logging", "filename": "views.py", "line": 45, "func": "login_view"}
+{"level": "ERROR", "time": "2024-11-14 16:08:08", "module": "views", "pid": 8676, "thread": 3108, "text": "User shmel already exists", "filename": "views.py", "line": 69, "func": "reg_view"}
+{"level": "ERROR", "time": "2024-11-14 16:14:54", "module": "views", "pid": 14744, "thread": 13920, "text": "Error while logging", "filename": "views.py", "line": 45, "func": "login_view"}
+{"level": "ERROR", "time": "2024-11-14 16:56:19", "module": "log", "pid": 12316, "thread": 15160, "text": "Internal Server Error: /upload/", "filename": "log.py", "line": 241, "func": "log_response"}
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\PIL\ImagePalette.py", line 164, in getcolor
+    return self.colors[color]
+KeyError: (255, 0, 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\views.py", line 130, in upload_file
+    process_image(MODEL_PATH, image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 114, in process_image
+    write_label_on_image(image, label, new_image_path)
+  File "C:\Users\misha\PycharmProjects\Django project\test_project\main\model\vision_model.py", line 90, in write_label_on_image
+    draw.text(position, label, fill="red", font=font)  # You can change 'white' to any color you want
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\PIL\ImageDraw.py", line 684, in text
+    ink = getink(fill)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\PIL\ImageDraw.py", line 624, in getink
+    ink, fill_ink = self._getink(fill)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\PIL\ImageDraw.py", line 163, in _getink
+    ink = self.palette.getcolor(ink, self._image)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\PIL\ImagePalette.py", line 167, in getcolor
+    index = self._new_color_index(image, e)
+  File "C:\Users\misha\PycharmProjects\Django project\.venv\lib\site-packages\PIL\ImagePalette.py", line 138, in _new_color_index
+    raise ValueError(msg) from e
+ValueError: cannot allocate more than 256 colors
